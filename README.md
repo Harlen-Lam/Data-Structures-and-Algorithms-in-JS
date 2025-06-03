@@ -2,75 +2,13 @@
 
 ## 介绍
   本仓库的内容是对B站up主coderwhy的视频[《JavaScript数据结构与算法》](https://www.bilibili.com/video/BV1x7411L7Q7)以及简书文章[《数据结构和算法目录》](https://www.jianshu.com/p/38853c044156)的学习和总结。coderwhy大佬的讲解深入浅出，让人十分容易理解和掌握，欢迎大家去了解coderwhy大佬的简书文章与B站视频，结合使用，效果更佳。
-  
-## 概述
-1. [**重要性**](importance.md)
-  - 什么是数据结构？
-  - 数据结构和算法的重要性
-2. **线性结构**
-- [数组](array.md)
-  - 数组使用的API
-- [栈](stack.md)
-  - 自定义栈
-  - 栈的应用
-- [队列](queue.md)
-  - 自定义队列
-  - 优先级队列
-  - 队列的应用
-- [链表](linked-list.md)
-  - 链表原理
-  - 自定义链表
-  - 双向链表
-3. [**哈希表**](hash-table.md)
-- 哈希表理论
-  - 哈希表介绍
-  - 认识哈希化
-  - 地址的冲突
-    - 链地址法
-    - 开放地址法
-  - 哈希化效率
-- 自定义哈希表
-  - 哈希函数
-  - 哈希表实现
-  - 哈希表扩容
-  - 容量质数
-4. [**树结构**](tree.md)
-- 树相关的概念
-  - 书的基本概念
-  - 二叉树的概念
-- 二叉搜索树
-  - 二叉搜索树的概念
-- 树的遍历
-  - 中序遍历
-  - 先序遍历
-  - 后序遍历
-- 二叉搜索树的删除
-- 二叉搜索树的补充
-5. [**图结构**](graph.md)
-- 图相关概念
-- 图的表示
-  - 邻接矩阵
-  - 邻接表
-  - 关联矩阵
-- 自定义图
-- 图的遍历
-  - 广度优先搜索
-  - 深度优先搜索
-6. **排序&搜索**
-- [简单排序](simple-sorting.md)
-  - 冒泡排序
-  - 选择排序
-  - 插入排序
-- [高级排序](advanced-sorting.md)
-  - 希尔排序
-  - 快速排序
 
 ## 重要性
 - 什么是数据结构和算法？
   - **数据结构**：在计算机中，存储和组织数据的方式。
     - 常见的数据结构：（数组、栈、列表、图、散列表、队列、树、堆）
-    - ![image](https://github.com/user-attachments/assets/8da0ae86-97c2-4f15-bc8a-c8267a151caa)
-    - 不同的数据结构有着不同的操作性能：有的查询好、有的插入好等等。
+      ![image](https://github.com/user-attachments/assets/8da0ae86-97c2-4f15-bc8a-c8267a151caa)
+    - 不同的数据结构有着不同的操作性能：有的查询性能好、有的插入性能好，等等。
 
   - **算法**：解决问题的办法、步骤/逻辑。
     - 一个有限指令集，每条指令的描述不依赖于语言。
@@ -81,34 +19,25 @@
   - 解决问题方法的效率，跟**数据的存储方式**（数据结构）有关。
   - 而**算法的优劣**也会影响效率。
   - 对于编程语言（C、JS、Java...）来说，想要了解其**设计层面**的原理，数据结构和算法是十分重要的。如果仅考虑代码的应用层面，那就了解即可。
+  
+## 数据结构
+- [数组（Array）](data-structure/array.md)
+- [栈（Stack）](data-structure/stack.md)
+- [队列（Queue）](data-structure/queue.md)
+- [链表（Linked List）](data-structure/linked-list.md)
+- [双向链表（Doubly Linked List）](data-structure/doubly-linked-list.md)
+- [集合（Set）](data-structure/set.md)
+- [字典（Dictionary）](data-structure/dictionary.md)
+- [哈希表（Hash Table）](data-structure/hash-table.md)
+- [树（Tree）](data-structure/tree.md)
+- [二叉搜索树（Binary Search Tree）](data-structure/binary-search-tree.md)
+- [图（Graph）](data-structure/graph.md)
 
-## 线性结构
-### 数组
-- 具体数组的内容待学习。
-- JS中的数据就是对API的调用，因此掌握API的调用即可。
-- 补充：普通语言的数组封装（比如Java中的ArrayList）
-  - 常见语言的数组**不能**存放**不同的数据类型**，因此所有语言在封装数组时，通常会将所有的数据以***Object类型***存放。
-  - 常见语言的数组容量**不会**自动改变。（需要进行扩容操作）
-    - 例如Java中的ArrayList就是通过创建一个更大的数组，然后将原数组的值复制过去，得到一个新的、更大的数组。
-  - 常见语言的数组进行中间**插入**和**删除**操作性能比较低。
-    - 数组的插入/删除，都需要调整插入/删除位置后面的所有元素（向后移动或者向前移动），因此需要较多的操作步骤，性能也就比较低。
-    - 而数组的**查询/搜索**，因为数组是有下标的（有序排列），所以查询/搜索的性能是比较好的。
-### 栈
-- 自定义栈
-- 栈的应用
-### 队列
-- 自定义队列
-- 优先级队列
-- 队列的应用
-### 列表
-- 链表原理
-- 自定义链表
-- 双向链表
-
-## 哈希表
-
-## 树结构
-
-## 图结构
-
-## 排序&搜索
+## 算法
+- [简单排序（Simple Sorting）](algorithm/simple-sorting.md)
+  - 冒泡排序
+  - 选择排序
+  - 插入排序
+- [高级排序（Advanced Sorting）](algorithm/advanced-sorting.md)
+  - 希尔排序
+  - 快速排序
