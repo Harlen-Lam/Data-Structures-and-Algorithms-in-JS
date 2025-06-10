@@ -15,6 +15,8 @@
 - [添加方法](#添加方法)
 - [测试代码](#测试代码)
 - [toString](#tostring)
+### 四.图算法
+- [图算法](../algorithm/graph-algorithms.md)
 
 ## 一. 图的概念
 ### 什么是图？
