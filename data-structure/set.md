@@ -106,13 +106,13 @@
   ```
   // 获取集合中所有的值
   Set.prototype.values = function () {
-      return Object.keys(this.items)
+      return Object.values(this.items)
   
       /*
       考虑兼容性问题, 使用下面的代码
       var keys = []
       for (var value in this.items) {
-          keys.push(value)
+          keys.push(this.items[value])
       }
       return keys
       */
