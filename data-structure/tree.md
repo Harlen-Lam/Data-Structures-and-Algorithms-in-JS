@@ -80,11 +80,11 @@
   - 9.树的深度（Depth）：树中所有结点中的最大层次是这棵树的深度。
 ### 树的表示
 - 树可以有多种表示的方式.
-- 最普通的表示方式:  
+- 最普通的表示方式:(每个节点包含自身数据和所有子节点)  
   ![image](https://github.com/user-attachments/assets/9cf21c3e-fae5-49ce-8f64-46f024287d41)
-- 儿子-兄弟表示法:  
+- 儿子-兄弟表示法:(每个节点包含自身数据,最左边的子节点和自己的兄弟节点)  
   ![image](https://github.com/user-attachments/assets/dcc06c94-fb25-427c-8f10-524d698ae6fc)
-- 儿子-兄弟表示法旋转:  
+- 儿子-兄弟表示法旋转:(通过旋转变换成二叉树)  
   ![image](https://github.com/user-attachments/assets/6af1fe59-913d-456a-b431-c1de692e3eb1)
 - 你发现上面规律了吗?
   - 其实所有的树本质上都可以使用二叉树模拟出来.
